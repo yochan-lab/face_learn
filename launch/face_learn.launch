@@ -1,0 +1,7 @@
+<launch>
+    <node name="face_learn" pkg="face_learn" type="face_learn_node" output="screen">
+        <param name="cascade_file" value="$(find face_learn)/config/haarcascade_frontalface_alt.xml" />
+        <param name="face_database_file" value="$(find face_learn)/config/faces.dat" />
+        <param name="camera_stream" value="/camera/image_raw" />
+    </node>
+</launch>
